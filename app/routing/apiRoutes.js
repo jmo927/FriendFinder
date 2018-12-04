@@ -2,7 +2,6 @@ const friendsData = require("../data/friends");
 
 const scoreSurvey = (survey) => {
     let total = 0;
-
     for (let i = 0; i < survey.length; i++) {
         total += +survey[i];
     }
@@ -17,8 +16,7 @@ module.exports = function (app) {
     })
 
     app.post("/api/friends", function (req, res) {
-
-        let userScore = scoreSurvey(req.body.answers);
+        let userScore = scoreSurvey(req.body.scores);
         let matchProfile = friendsData[0];
         let matchPoint = Math.abs( scoreSurvey(matchProfile.scores) - userScore );
 
@@ -27,12 +25,10 @@ module.exports = function (app) {
             if ( contenderScore < matchPoint ) {
                 matchPoint = contenderScore;
                 matchProfile = friendsData[i];
-                console.log(matchProfile.name);
             }
         }
 
         friendsData.push(req.body);
-
         res.json(matchProfile);
     });
 

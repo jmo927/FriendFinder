@@ -4,11 +4,18 @@
 
 form {
     margin: 25px;  
+    font-family: "Cormorant Garamond", sans-serif;
 }
 
-label, a {
+h1 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-weight: bolder;
+}
+
+label {
     background-color: rgba(255, 255, 255, 0.897);  
     padding: 3px;
+    font-family: "Cormorant Garamond", sans-serif;
 }
 
 body {
@@ -36,6 +43,12 @@ body {
 }
 
 .wrapper {
+    font-family: "Cormorant Garamond", sans-serif;
     background-color: rgba(255, 255, 255, 0.897);   
+    /* background-image: url("../images/gryff.png"); */
+}
+
+.gryff-bg {
+    max-height: 500px;
 }
 

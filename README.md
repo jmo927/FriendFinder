@@ -28,6 +28,6 @@ https://mysterious-lowlands-73139.herokuapp.com/
 
   Style
   
--CSS
+- CSS
 
   Minor tweaks to Bootstrap

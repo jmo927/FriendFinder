@@ -9,14 +9,25 @@ https://mysterious-lowlands-73139.herokuapp.com/
 ## Tech Stack
 
 - JavaScript (jQuery)
+
   DOM manipulation
+  
 - Express
+
   Server, routing
+  
 - Node.js
+
   Logic and backend scripting
+  
 - HTML
+
   Layout
+  
 - Bootstrap
+
   Style
+  
 -CSS
+
   Minor tweaks to Bootstrap
